@@ -13,26 +13,22 @@
         <meta property="og:url" content="">
         <meta property="og:description" content="The most toxic comunity on the web.">
 
-        <!-- import the webpage's javascript file -->
         <link rel="icon" href="https://images-ext-1.discordapp.net/external/_6Lj9PUXyQjz-vpNLfaIivweovcQBXmswTpZOScz_Zs/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/575720609984544782/9183b41f2a982b3e643c50a801a37d1b.png">
 
-        <!-- Bootstrap -->
         <link rel="stylesheet" href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css">
 
-        <!-- Material Design Bootstrap -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css">
 
-         <!-- Font Awesome -->
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-         <!-- Scripts -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script>
-        document.addEventListener('contextmenu', function(e) {
-          e.preventDefault();
-        });
-        document.onkeydown = function(e) {
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+  document.onkeydown = function(e) {
   if(event.keyCode == 123) {
      alert("Nice Try")
      return false;
@@ -67,7 +63,7 @@
   top: 0;
   right: -5px;
   width: 2px;
-  /* Change colour of Cursor Here */
+
   background-color: white;
   z-index: 1;
   animation: flash 0.5s none infinite alternate;
@@ -95,7 +91,9 @@
   font-family: "Open Sans", sans-serif
 }
 body{
-  background: linear-gradient(135deg,#0f0e0f,#1704ca);
+  background: #780206; 
+  background: -webkit-linear-gradient(to right, #061161, #780206); 
+  background: linear-gradient(to right, #061161, #780206); 
   height: 100vh;
   justify-content: center;
 }
@@ -142,12 +140,12 @@ button:hover{
 <style type="text/css">
 body {
   overflow-x: hidden;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently*/
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .white {
