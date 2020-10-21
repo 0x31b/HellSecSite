@@ -92,8 +92,7 @@ document.addEventListener('contextmenu', function(e) {
 }
 
 body {
-    background: linear-gradient(219deg, #6a82fb, #fc5c7d);
-    background-size: 400% 400%;
+    background: black;
 
     -webkit-animation: AnimationName 35s ease infinite;
     -moz-animation: AnimationName 35s ease infinite;
@@ -156,13 +155,97 @@ svg{
   color: white;
   text-decoration: none;
 }
-
-button:hover{
-  background-color: yellow;
-}
-
     </style>
 
+ <script>
+    function opensesame() {
+var s = document.getElementById('enterSite').style;
+s.opacity = 1;
+(function fade(){(s.opacity-=.05)<0?s.display="none":setTimeout(fade,40)})();
+
+
+var videoElem = document.getElementById("video-background");
+var musicElem = document.getElementById("music-background");
+
+videoElem.play();
+musicElem.play();
+startTime()
+}
+
+</script>
+    <center>
+
+<div id="bgwrapper"></div>
+<div id="enterSite">
+  <br><br><br><br><br><br><br><br><br><br><br>
+    <button onclick="opensesame()">Enter</button>
+</div>
+</center>
+
+<video loop="" id="music-background" plays-inline="">
+    <source src="song.mp3" type="video/mp4">
+      <script>
+        var video = document.currentScript.parentElement;
+                    video.volume = 0.7;
+      </script>
+    </video>
+
+<video loop="" id="video-background" plays-inline="">
+<source src="Video.mp4" type="video/mp4">
+  <script>
+    var video = document.currentScript.parentElement;
+                video.volume = 0;
+  </script>
+</video>
+
+<style>
+
+    #enterSite {
+        position: fixed;
+        padding: 10px;
+        margin: -10px;
+        z-index: -10;
+        width: 100%;
+        height: 100%;
+        z-index: 200;
+    }
+    
+    
+    #enterSite button {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 4px;
+    padding-top: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 4px;
+    transition: 0.4s;
+    box-shadow: 0px 0px 0px rgba(25, 42, 86, 0.2);
+    background-color: transparent;
+    border: 3px solid white;
+}
+#enterSite button:hover {
+    background-color: rgba(41, 0, 46, 0.2);
+    box-shadow: 0px 0px 200px white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+    #video-background {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        
+    }
+    </style>
 <style type="text/css">
 body {
   overflow-x: hidden;
@@ -190,22 +273,13 @@ body {
   background-color: rgba(255, 0, 0, 0);
 }
         </style>
+
     </head>
     <center>
+      
     <body class="white">
 
-        <div class="navbar navbar-dark blue lighten-1 sticky-top d-flex p2">
-            <nav class="navbar-expand-md container d-flex p2">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="basicExampleNav">
-                </div>
-            </nav>
-        </div>
         <div class="container mt-3 text-center">
             <h1 class="lo", class="featurette-heading">Welcome To HellSec</h1>
             <p class="lo">The way the world works.</p>
@@ -220,13 +294,19 @@ body {
           <div class="col">
             <h2 class="lo">Projects</h2>
             <p class="lo", class="lead">
-              HellCord
+              HellCord a custom discord client filled with exploits and tools
             </p>
             <p class="lo", class="lead">
-              Disjack
+              Disjack an Electron injection tool used for overwriting a clients source
             </p>
             <p class="lo", class="lead">
-              AJ RCE
+              ACE a RCE for animaljam being worked on by VortexThaGod
+            </p>
+            <p class="lo", class="lead">
+              Armrichad the HellSec Discord bot with multi-scan features for web penetration
+            </p>
+            <p class="lo", class="lead">
+              DisTor a account checker for Discord running though tors built in onion chain to provide anonymous connections
             </p>
         </div>
 
@@ -239,20 +319,7 @@ body {
 
           <footer class="footer mt-auto py-3">
 
-        <div class="container text-center">
-            <b class="credit", class="lo">© HellSec 2020</b>
-          </center>
-            <br>
-        </div>
-
     </footer>
-
-        <script>
-
-             $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
     </body>
 </html>
 
