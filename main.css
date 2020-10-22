@@ -1,0 +1,220 @@
+.text-js{
+	opacity: 0;
+}
+.cursor{
+	display: block;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: -5px;
+	width: 2px;
+	background-color: white;
+	z-index: 1;
+	animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.blue.lighten-1 {
+	background-color: rgba(255, 0, 0, 0)!important;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif
+}
+body {
+	background: black;
+	-webkit-animation: AnimationName 35s ease infinite;
+	-moz-animation: AnimationName 35s ease infinite;
+	-o-animation: AnimationName 35s ease infinite;
+	animation: AnimationName 35s ease infinite;
+	height: 100vh;
+	justify-content: center;
+}
+@-webkit-keyframes AnimationName {
+	0%{
+		background-position:0% 50%
+}
+	50%{
+		background-position:100% 50%
+}
+	100%{
+		background-position:0% 50%
+}
+}
+@-moz-keyframes AnimationName {
+	0%{
+		background-position:0% 50%
+}
+	50%{
+		background-position:100% 50%
+}
+	100%{
+		background-position:0% 50%
+}
+}
+@-o-keyframes AnimationName {
+	0%{
+		background-position:0% 50%
+}
+	50%{
+		background-position:100% 50%
+}
+	100%{
+		background-position:0% 50%
+}
+}
+@keyframes AnimationName {
+	0%{
+		background-position:0% 50%
+}
+	50%{
+		background-position:100% 50%
+}
+	100%{
+		background-position:0% 50%
+}
+}
+.headline{
+	margin: 20px;
+	color: white;
+	font-size: 32px;
+	text-align: center;
+}
+h1{
+	letter-spacing: 1.6px;
+	font-weight: 300;
+}
+.twitterLink{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 10px 15px;
+	z-index: 3;
+}
+svg{
+	width: 25px;
+}
+.credit{
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	text-decoration: none;
+}
+
+#enterSite {
+	position: fixed;
+	padding: 10px;
+	margin: -10px;
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+}
+#enterSite button {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	color: white;
+	font-size: 48px;
+	letter-spacing: 4px;
+	padding-top: 4px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 4px;
+	transition: 0.4s;
+	box-shadow: 0px 0px 0px rgba(25, 42, 86, 0.2);
+	background-color: black;
+	background: black;
+	border: 3px solid white;
+}
+#enterSite button:hover {
+	background-color: rgba(41, 0, 46, 0.2);
+	background: black;
+	box-shadow: 0px 0px 200px white;
+	cursor: pointer;
+	transition: 0.4s;
+}
+#video-background {
+	width: 300px;
+	height: 300px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+}
+
+body {
+	overflow-x: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.white {
+	background-color: rgba(255, 0, 0, 0);
+}
+.dark {
+	background-color: #161616;
+}
+.lo {
+	color: white;
+}
+.a{
+	background-color: rgba(255, 0, 0, 0);
+}
+
+.fab {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+  
+.fab:hover {
+	opacity: 0.8;
+	color: white;
+}
+
+* {box-sizing: border-box;}
+
+.topnav {
+	background-color: rgba(25, 42, 86, 0.1);
+	overflow: hidden;
+	align-content: center;
+	float: center;
+  }
+  
+  .topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  .topnav a:hover {
+	color: darkgrey;
+  }
+  
+  .topnav a.active {
+	color: grey;
+  }
